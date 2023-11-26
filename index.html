@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     form{
+        width:50vw;
+        height:30vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border-radius:10px;
+        background-color:blue;
+     } 
+     .inputContainer
+     {
+        height: 15%; 
+     }
+     form h3
+     {
+        text-align: center;
+        color:white;
+        font-size: 30px;
+        position:absolute;
+        top:4px;
+        font-weight: bold;
+        margin-top: 0px;
+        text-shadow: 2px 2px 2px;
+     }
+    
+     input
+     {
+        height: 100%;
+        padding:2px;
+        border-radius:10px;
+        text-align: center;
+        box-sizing: border-box;
+     } 
+     #create
+     {
+        display: block;
+        width:100px;
+        padding:3px;
+        margin-top: 27px;
+        text-align:center;
+        background-color:green;
+        color:white;
+     }
+     #buttonContainer
+     {
+        width:20vw;
+        height:5vh;
+        border:3px solid red;
+        margin:auto;
+        box-shadow: 5px 5px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:10px;
+        background-color: green;
+     } 
+     /* targeting h3 of the div */
+     #buttonContainer + h3
+     {
+      text-align: center;
+        color:black;
+        display: block;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 15px;
+        text-shadow: 2px 2px 2px;
+       
+     }
+     .btn
+     {
+        width:100px;
+        height:30px;
+        border-radius:10px;
+        padding:2px;
+        background-color: black;
+        color:white;
+     }
+     p{
+width:200px;
+height: 50px;
+margin: auton;
+background-color: black;
+color: white;
+text-align: center;
+margin: auto;
+margin-top: 20px;
+border-radius: 15px;
+line-height:50px;
+font-weight: bold;
+box-shadow: 5px 5px 10px 10px;
+     }
+    </style>
+</head>
+<body onload="cookieChecker()">
+ <form name="cookieForm">
+    <h3>Please fill the form to create the cookie<br>If you have already cookie then delete the cookie before creating the cookie.
+    </h3>
+    <div class="inputContainer">
+    <label for="Name">
+        Name:
+<input type="text" name="Name" id="Name" placeholder="Enter your Name">
+    </label>
+</div>
+<div class="inputContainer">
+    <label for="expire">
+        Expire Date:
+   
+   <!-- here try validate check -->
+<input type="Number" name="expire" id="expire" placeholder="Enter the cookie valid day" min="3" max="30">
+    </label>
+       <input type="button" value="create" id="create">
+    
+</div>
+</form>  
+ <!-- here creating button for display and delete the cookie -->
+ <div id="buttonContainer">
+    <button id="display" class="btn" onclick="cookieDisplay()">Display</button>
+    <button id="delete" class="btn">Delete</button>
+ </div>
+ <h3>Here displaying your cookie</h3>
+ <script src="index.js">
+
+ </script>
+</body>
+
