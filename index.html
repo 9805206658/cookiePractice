@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+      *
+      {
+         box-sizing:border-box;
+      }
      form{
         width:50vw;
         height:30vh;
@@ -19,6 +23,7 @@
      .inputContainer
      {
         height: 15%; 
+        width:30vw;
      }
      form h3
      {
@@ -34,6 +39,7 @@
     
      input
      {
+      width:50%;
         height: 100%;
         padding:2px;
         border-radius:10px;
@@ -98,7 +104,9 @@ line-height:50px;
 font-weight: bold;
 box-shadow: 5px 5px 10px 10px;
      }
-        @media only screen and (max-width:746px) 
+     /* here apply the media query for responsive website */
+     
+     @media only screen and (max-width:746px) 
      {
      form h3
      {
@@ -126,36 +134,9 @@ box-shadow: 5px 5px 10px 10px;
         height: 100%;
         
      } 
-@media only screen and (max-width:746px) 
-     {
-     form h3
-     {
-      font-size:20px;
-      margin-top:5px;
+
+
      }
-     form{
-        width:100vw;
-        height:50vh;
-     } 
-     #buttonContainer
-     {
-        width:50vw;
-        height:10vh;
-        margin-top:10px;
-     } 
-     .inputContainer
-     {
-        height: 15%; 
-        width:90vw;
-     }
-     input
-     {
-      width:60%;
-        height: 100%;
-        
-     }
-     }
- }
 
     </style>
 </head>

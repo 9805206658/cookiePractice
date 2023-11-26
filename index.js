@@ -1,4 +1,6 @@
 // crate the function to create the cookie
+alert("the size of the window"+window.innerWidth);
+alert("the heigh of the browser"+window.innerHeight);
  let count=0;
  let createBtn=document.getElementById("create");
 function create()
